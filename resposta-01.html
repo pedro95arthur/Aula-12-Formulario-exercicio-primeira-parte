@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Carros Elétricos</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Nome Completo: </label><br>
+            <!-- 
+            required - obrigatório; 
+            minlength - Tamanho mínimo; 
+            maxlength - Tamanho máximo;
+            size - Tamanho da caixa;
+            placeholder - dica de preenchimento;
+            autocomplete off - Não completar o preenchimento;           
+            -->
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="40" 
+            placeholder="Digite seu nome completo" autocomplete="username">
+            <!-- autocomplete de username -->
+        </p><br>
+
+
+        <p>
+            <label for="iusu">Modelo de carro elétrico favorito: </label><br>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="40" 
+            placeholder="Ex: Tesla Model 3" autocomplete="username">            
+        </p><br>
+
+
+        <p>
+            <label for="isen">Crie uma senha de acesso: </label><br>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="10" size="15" placeholder="Mínimo 6 caracteres" autocomplete="current-password">
+            <!-- current-password - senha atual -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
